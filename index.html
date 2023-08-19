@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>文字重复器</title>
+ <style>
+ body{
+  background-color:white;
+   }
+button{
+color:black;
+width:200px;
+height:50px;
+border-radius:20px;
+border:none;
+  } 
+input{
+  width:300px;
+  }
+h1{
+  text-align:center;
+  }
+</style>
+  </head>
+  <body>	
+	<h1>文字重复器</h1>
+
+ <center>
+	<input id="dame" class="dame" type="text" placeholder="输入想要重复的文字" />
+ <br></br>
+ <input id="demo" class="demo" type="text" placeholder="输入你想要重复文字次数" />
+ <br></br>
+ <button id="c">确定</button>
+ </center>
+ 
+   <script>
+   
+   
+   c,onclick=function(){
+     var dame=document.getElementById("dame").value;
+     var demo=document.getElementById("demo").value;
+     
+   for(var i=1;i<=demo;i++){
+   document.write("<br>");
+   document.write(i+dame);
+       }
+        
+   }
+ 
+   </script>
+  </body>
+</html>
